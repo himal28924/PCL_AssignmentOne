@@ -4,9 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{33299D82-388A-40C1-8695-3B4462BD0710}"
-	ProjectSection(SolutionItems) = preProject
-		src\gitignore.io = src\gitignore.io
-	EndProjectSection
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Library", "src\Library\Library.fsproj", "{4A0B8AB2-81CF-4564-A364-2145AEF3EF24}"
 EndProject

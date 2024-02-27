@@ -1,6 +1,6 @@
 ﻿open System
 open Library
-open Library.Product.Pricing
+open Library.Product.PricingDrink
 open Library.Product.DrinkTypes
 
 [<EntryPoint>]

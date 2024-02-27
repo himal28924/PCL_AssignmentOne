@@ -7,9 +7,13 @@
 
   <ItemGroup>
     <Folder Include="Customer\" />
-    <Compile Include="Product\DrinkTypes.fs" />
     <Compile Include="Product\ProductTypes.fs" />
-    <Compile Include="Product\Pricing.fs" />
+    <Compile Include="Product\Food\FoodTypes.fs" />
+    <Compile Include="Product\Food\PricingFood.fs" />
+    <Compile Include="Product\Fruit\FruitTypes.fs" />
+    <Compile Include="Product\Fruit\PricingFruit.fs" />
+    <Compile Include="Product\Drink\DrinkTypes.fs" />
+    <Compile Include="Product\Drink\PricingDrink.fs" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace Library.Product.DrinkTypes
+﻿namespace Library.Product.Drink.DrinkTypes
 
 type CoffeeType =
     | Espresso
