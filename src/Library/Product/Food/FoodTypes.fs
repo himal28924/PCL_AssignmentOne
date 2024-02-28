@@ -7,7 +7,7 @@ type FoodTypes =
     | Sandwich
 
 type Food ={
-    Type: FoodTypes
+    FoodType: FoodTypes
     Weight: double
 }
            

@@ -6,14 +6,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Customer\" />
-    <Compile Include="Product\ProductTypes.fs" />
+    <Compile Include="Customer\CustomerTypes.fs" />
     <Compile Include="Product\Food\FoodTypes.fs" />
     <Compile Include="Product\Food\PricingFood.fs" />
     <Compile Include="Product\Fruit\FruitTypes.fs" />
     <Compile Include="Product\Fruit\PricingFruit.fs" />
     <Compile Include="Product\Drink\DrinkTypes.fs" />
     <Compile Include="Product\Drink\PricingDrink.fs" />
+    <Compile Include="Product\Product.fs" />
+    <Compile Include="Order\Order.fs" />
+    <Compile Include="Payment\PaymentTypes.fs" />
   </ItemGroup>
 
 </Project>

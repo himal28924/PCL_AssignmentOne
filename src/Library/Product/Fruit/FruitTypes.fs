@@ -6,7 +6,7 @@ type FruitTypes =
     | Orange
 
 type Fruit = {
-    Type : FruitTypes
+    FruitType : FruitTypes
 }
    
     

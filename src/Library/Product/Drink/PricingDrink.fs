@@ -1,9 +1,9 @@
 ﻿module Library.Product.Drink.PricingDrink
-open Library.Product.Drink.DrinkTypes
+open Library.Product.Drink.DrinkType
 
 // Define the types of drinks and their sizes , using Pattern Matching to compute the price of each drink based on its type and size 
 let computePriceForDrink (product: Drink) =
-    match product.Type, product.Size with
+    match product.DrinkType, product.Size with
 
     // For Coffee
     | Coffee coffeeType, Small-> 
@@ -46,21 +46,21 @@ let computePriceForDrink (product: Drink) =
     // For Juice
     | Juice juiceType, Small ->
         match juiceType with
-        | Orange -> 19.0
-        | Apple -> 18.5
-        | Mango -> 20.0
+        | OrangeJuice -> 19.0
+        | AppleJuice -> 18.5
+        | MangoJuice -> 20.0
     
     | Juice juiceType, Medium ->
         match juiceType with
-        | Orange -> 19.5
-        | Apple -> 20.0
-        | Mango -> 22.5
+        | OrangeJuice -> 19.5
+        | AppleJuice -> 20.0
+        | MangoJuice -> 22.5
     
     | Juice juiceType, Large ->
         match juiceType with
-        | Orange -> 20.0
-        | Apple -> 22.5
-        | Mango -> 26.0
+        | OrangeJuice -> 20.0
+        | AppleJuice -> 22.5
+        | MangoJuice -> 26.0
     
     | _ -> failwith "Invalid product type or size"
     

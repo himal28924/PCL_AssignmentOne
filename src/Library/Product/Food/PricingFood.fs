@@ -2,8 +2,8 @@
 open Library.Product.Food
 
 // Calculate the price of a food product
-let price (product: Food) =
-    match product.Type with
+let computePriceForFood (product: Food) =
+    match product.FoodType with
     | Chicken -> product.Weight * 45.0
     | Rice -> product.Weight * 20.0
     | Fish -> product.Weight * 35.0

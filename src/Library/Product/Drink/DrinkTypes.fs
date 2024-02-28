@@ -1,4 +1,4 @@
-﻿namespace Library.Product.Drink.DrinkTypes
+﻿namespace Library.Product.Drink.DrinkType
 
 type CoffeeType =
     | Espresso
@@ -11,11 +11,11 @@ type TeaType =
     | White
     
 type JuiceType =
-    | Orange
-    | Apple
-    | Mango
+    | OrangeJuice
+    | AppleJuice
+    | MangoJuice
 
-type DrinkType =
+type DrinkTypes =
     | Coffee of CoffeeType
     | Tea of TeaType 
     | Juice of JuiceType
@@ -26,7 +26,7 @@ type Size =
     | Large
     
 type Drink = {
-    Type : DrinkType
+    DrinkType : DrinkTypes
     Size : Size
 }
 
