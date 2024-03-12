@@ -39,20 +39,34 @@ let main args =
     let fruitProduct3 = { ProductType = Fruit fruit3 }
     
     
-    let orderFromCustomer = {
-        ProductsToOrders = [
-            drinkProduct1 ; drinkProduct2 ; drinkProduct3
-            foodProduct1 ; foodProduct2 ; foodProduct3
-            fruitProduct1 ; fruitProduct2 ; fruitProduct3
-        ]
-    }
+    // let orderFromCustomer = {
+    //     ProductsToOrders = [
+    //         drinkProduct1 ; drinkProduct2 ; drinkProduct3
+    //         foodProduct1 ; foodProduct2 ; foodProduct3
+    //         fruitProduct1 ; fruitProduct2 ; fruitProduct3
+    //     ]
+    // }
     
-    let totalPrice = calculateTotalPrice orderFromCustomer
-    
-    printfn "Total price is %f" totalPrice 
-    
-    // Declaring orders
-    
+    // let totalPrice = calculateTotalPrice orderFromCustomer
+    printfn "KAm suru"
+    getAgent.Post(OrderProduct(drinkProduct1 , 2))
+    getAgent.Post(OrderProduct(drinkProduct2 , 2))
+    getAgent.Post(OrderProduct(drinkProduct3 , 2))
+    getAgent.Post(LeaveComment("OO SEXY"))
+    getAgent.Post(OrderProduct(foodProduct1 , 2))
+    getAgent.Post(OrderProduct(foodProduct2 , 2))
+    getAgent.Post(OrderProduct(foodProduct3 , 2))
+    getAgent.Post(LeaveComment("K xa hola?"))
+
+    getAgent.Post(OrderProduct(fruitProduct1 , 2))
+    getAgent.Post(OrderProduct(fruitProduct2 , 2))
+    getAgent.Post(OrderProduct(fruitProduct3, 2))
+    getAgent.Post(LeaveComment("Tmro khabar"))
+
+      
+      // Declaring orders
+    // Keep the console window open
+    Console.ReadLine() |> ignore
     
     0 //
     

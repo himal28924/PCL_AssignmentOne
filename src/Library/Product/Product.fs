@@ -16,16 +16,15 @@ type ProductTypes =
     
 type Product = {
         ProductType: ProductTypes
-}
-
+}    
 // Calculate the price of a product
 
-let getPriceOfProduct (product: Product) =
+let getPriceOfProduct (product: Product) quantity=
     match product.ProductType with
     | Drink drink ->
-        computePriceForDrink drink
+        computePriceForDrink drink |> (*) quantity |> (*) 1.2
     | Food food ->
-        computePriceForFood food
+        computePriceForFood food |> (*) quantity
     | Fruit fruit ->
-        computePriceForFruit fruit
+        computePriceForFruit fruit |> (*) quantity
     
